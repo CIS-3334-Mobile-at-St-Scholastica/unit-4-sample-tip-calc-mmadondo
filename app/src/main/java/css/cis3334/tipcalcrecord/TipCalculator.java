@@ -22,7 +22,10 @@ public class TipCalculator implements CalculatorInterface {
         this.bill = bill;
         this.numPeople = numPeople;
         if (goodService) {
-            totalTip = HIGH_TIP_RATE * bill;
+            totalTip = HIGH_TIP_RATE * bill; //for outstanding service
+            tipPerPerson = totalTip / numPeople;
+        } else{
+            totalTip = LOW_TIP_RATE * bill; //for normal service
             tipPerPerson = totalTip / numPeople;
         }
         mainView.updateView(totalTip,tipPerPerson);

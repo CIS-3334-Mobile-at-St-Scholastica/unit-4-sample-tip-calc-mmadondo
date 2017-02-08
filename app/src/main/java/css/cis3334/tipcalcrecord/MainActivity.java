@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements updateViewInterface {
-    // Declare needed varaiable for widgets
+    // Declare needed variable for widgets
     EditText etBill;
     TextView tvTotalTip;
     TextView tvTipPerPerson;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements updateViewInterfa
         rb1 = (RadioButton) findViewById(R.id.radioButton1);
         rb2 = (RadioButton) findViewById(R.id.radioButton2);
         rb3 = (RadioButton) findViewById(R.id.radioButton3);
-        tipCalc = new TipCalculator(this);                  // instatiate the tip calculator
+        tipCalc = new TipCalculator(this);                  // instantiate the tip calculator
     }
 
     public void onClickButtonCalc(View view) {
